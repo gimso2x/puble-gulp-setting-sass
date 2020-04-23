@@ -118,10 +118,5 @@ gulp.task('watch', function (done) {
 // gulp를 실행하면 default 로 server task와 watch task, imgMinCompile task를 실행
 // series = 순차
 // parallel = 동시 or 병렬(실행은 동시에 시작되지만 처리속도에 따라 종료시점이 달라진다)
-<<<<<<< HEAD
 gulp.task('default', gulp.series('jsCompile', 'scssCompile', 'htmlComplie', 'imgMinCompile', 'fontCompile', gulp.parallel('watch', 'server')));
 ```
-=======
-gulp.task('default', gulp.series('jsCompile', 'scssCompile', 'htmlComplie', 'imgMinCompile', gulp.parallel('watch', 'server')));
-```
->>>>>>> 85ec579d501ee2d14f72bc60848ff0bbc9437c12
