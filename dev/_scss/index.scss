@@ -1,0 +1,39 @@
+$default-font-size: 13px;
+$default-font-color: #1c1c1c;
+$default-font-color-link: #005698;
+$default-font-famliy: 'Noto Sans KR', Malgun Gothic, '맑은 고딕', dotum, '돋움', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial,sans-serif;
+
+body{
+	background-color: red;
+	header{
+		background-color: blue;
+	}
+	footer{
+		background-color: #444;
+		box-sizing: border-box;
+		display: flex;
+	}
+}
+
+input,button,textarea,select{
+    margin:0;
+    padding:0;
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-family: $default-font-famliy;
+    color:$default-font-color;
+    font-size:1rem;
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:focus{
+        box-shadow:  0 0 0px 1000px #fff inset;
+        -webkit-text-fill-color: $default-font-color !important;
+    }
+}
+button{
+    &:active,
+    &:focus{
+        outline: 0;
+    }
+}
